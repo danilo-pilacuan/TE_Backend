@@ -1,6 +1,7 @@
 const modeloCaracteristicaEquipo = require('../models').CaracteristicaEquipo
 const modeloDependencia = require('../models').Dependencia
 const modeloEquipo = require('../models').Equipo
+const modeloEstadoEquipo = require('../models').EstadoEquipo
 const modeloFichaMantenimiento = require('../models').FichaMantenimiento
 const modeloFuncionario = require('../models').Funcionario
 const modeloImagen = require('../models').Imagen
@@ -17,10 +18,10 @@ module.exports = class controllerEquipos {
             include : [
                 {model:modeloFichaMantenimiento},
                 {model:modeloFuncionario},
-                {model:modeloInventario},
+                {model:modeloEstadoEquipo},
                 {model:modeloCaracteristicaEquipo},
                 {model:modeloImagen},
-                {model:modeloTipoEquipo},
+                {model:modeloTipoEquipo}
             ]
         })
         .then((data)=>{
@@ -38,10 +39,10 @@ module.exports = class controllerEquipos {
             include : [
                 {model:modeloFichaMantenimiento},
                 {model:modeloFuncionario},
-                {model:modeloInventario},
+                {model:modeloEstadoEquipo},
                 {model:modeloCaracteristicaEquipo},
                 {model:modeloImagen},
-                {model:modeloTipoEquipo},
+                {model:modeloTipoEquipo}
             ]
         })
         .then((data)=>{

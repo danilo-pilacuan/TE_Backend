@@ -23,6 +23,9 @@ module.exports = {
       descripcion: {
         type: Sequelize.STRING
       },
+      tipoMetrica: {
+        type: Sequelize.STRING
+      },
       valor: {
         type: Sequelize.STRING
       },

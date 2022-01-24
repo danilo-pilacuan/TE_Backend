@@ -17,6 +17,151 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso CPU',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        fechaRecepcion: new Date(),
+        idEquipo: 1,
+        descripcion: 'Uso CPU',
+        valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -25,6 +170,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -33,6 +179,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -41,6 +188,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -49,6 +197,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -57,6 +206,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -65,6 +215,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -73,6 +224,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -81,6 +233,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -89,6 +242,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -97,6 +251,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -105,6 +260,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -113,6 +269,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -121,6 +278,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -129,6 +287,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -137,6 +296,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -145,6 +305,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -153,6 +314,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -161,6 +323,7 @@ module.exports = {
         idEquipo: 1,
         descripcion: 'Uso RAM',
         valor: Math.floor(Math.random() * 100).toString(),
+        tipoMetrica: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       }

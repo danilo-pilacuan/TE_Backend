@@ -21,7 +21,8 @@ module.exports = (sequelize, DataTypes) => {
     fechaRecepcion: DataTypes.DATE,
     idEquipo: DataTypes.INTEGER,
     descripcion: DataTypes.STRING,
-    valor: DataTypes.STRING
+    valor: DataTypes.STRING,
+    tipoMetrica: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Metrica',

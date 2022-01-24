@@ -1,6 +1,7 @@
 const modeloCaracteristicaEquipo = require('../models').CaracteristicaEquipo
 const modeloDependencia = require('../models').Dependencia
 const modeloEquipo = require('../models').Equipo
+const modeloEstadoEquipo = require('../models').EstadoEquipo
 const modeloFichaMantenimiento = require('../models').FichaMantenimiento
 const modeloFuncionario = require('../models').Funcionario
 const modeloImagen = require('../models').Imagen

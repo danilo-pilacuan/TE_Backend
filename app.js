@@ -24,7 +24,7 @@ const modeloUsuario = require('./models').Usuario
 
 app.use(cors({
     credentials: true,
-    origin: ['http://localhost:3000','http://localhost:8080','http://localhost:4200']
+    origin: ['http://localhost:3000','http://localhost:8080','http://localhost:8081','http://localhost:4200']
 }))
 app.use(cookieParser())
 //app.use(morgan('dev'))
@@ -89,6 +89,7 @@ app.use('/api/funcionarios',require('./routes/routesFuncionarios'))
 app.use('/api/imagenes',require('./routes/routesImagenes'))
 app.use('/api/inventario',require('./routes/routesInventario'))
 app.use('/api/metricas',require('./routes/routesMetricas'))
+app.use('/api/tipoequipo',require('./routes/routesTipoEquipo'))
 app.use('/api/tipocaracteristicaequipo',require('./routes/routesTipoCaracteristicaEquipo'))
 app.use('/api/usuarios',require('./routes/routesUsuarios'))
 

@@ -8,29 +8,47 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      numInventario: {
+        type: Sequelize.STRING
+      },
+      descripcion: {
+        type: Sequelize.STRING
+      },
       direccionIP: {
         type: Sequelize.STRING
       },
       direccionMAC: {
         type: Sequelize.STRING
       },
+      observaciones: {
+        type: Sequelize.STRING
+      },
+      idEstadoEquipo: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'EstadoEquipos',
+          key: 'id' 
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
+      },
       idTipoEquipo: {
         type: Sequelize.INTEGER,
-        references:{
+        references: {
           model: 'TipoEquipos',
-          key: 'id'
+          key: 'id' 
         },
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
       },
       idFuncionario: {
         type: Sequelize.INTEGER,
-        references:{
+        references: {
           model: 'Funcionarios',
-          key: 'id'
+          key: 'id' 
         },
-        onDelete: 'CASCADE',
-        onUpdate: 'CASCADE'
+        onDelete: 'SET NULL',
+        onUpdate: 'SET NULL'
       },
       createdAt: {
         allowNull: false,

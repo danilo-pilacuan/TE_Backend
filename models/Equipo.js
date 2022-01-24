@@ -19,13 +19,14 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'idFuncionario',
         target_Key: 'id'
       }),
+      Equipo.belongsTo(models.EstadoEquipo,{
+        foreignKey: 'idEstadoEquipo',
+        target_Key: 'id'
+      }),
       Equipo.hasMany(models.CaracteristicaEquipo,{
         foreignKey: 'idEquipo'
       }),
       Equipo.hasMany(models.FichaMantenimiento,{
-        foreignKey: 'idEquipo'
-      }),
-      Equipo.hasMany(models.Inventario,{
         foreignKey: 'idEquipo'
       }),
       Equipo.hasMany(models.Metrica,{
@@ -34,11 +35,16 @@ module.exports = (sequelize, DataTypes) => {
       Equipo.hasMany(models.Imagen,{
         foreignKey: 'idEquipo'
       })
+
     }
   };
   Equipo.init({
+    numInventario: DataTypes.STRING,
+    descripcion: DataTypes.STRING,
     direccionIP: DataTypes.STRING,
     direccionMAC: DataTypes.STRING,
+    observaciones: DataTypes.STRING,
+    idEstadoEquipo: DataTypes.INTEGER,
     idTipoEquipo: DataTypes.INTEGER,
     idFuncionario: DataTypes.INTEGER
   }, {
