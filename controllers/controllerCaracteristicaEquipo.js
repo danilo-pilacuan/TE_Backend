@@ -46,9 +46,25 @@ module.exports = class controllerCaracteristicaEquipo {
             res.json({error:error})
         })
     }
+    static async getCaracteristicasByEquipoId(req,res){
+        modeloCaracteristicaEquipo.findAll({
+            where:{ id : req.params.id },
+            include : [
+                {model:modeloEquipo},
+                {model:modeloTipoCaracteristicaEquipo}
+            ]
+        })
+        .then((data)=>{
+            res.json({resultado:data})
+        })
+        .catch((error)=>{
+            res.json({error:error})
+        })
+    }
 
     //create a User
     static async createCaracteristicaEquipo(req,res){
+        console.log(req.body)
         modeloCaracteristicaEquipo.create(req.body)
         .then((data)=>{
             res.json({resultado:data})

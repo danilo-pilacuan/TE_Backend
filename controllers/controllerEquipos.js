@@ -10,18 +10,19 @@ const modeloMetrica = require('../models').Metrica
 const modeloTipoCaracteristicaEquipo = require('../models').TipoCaracteristicaEquipo
 const modeloTipoEquipo = require('../models').TipoEquipo
 const modeloUsuario = require('../models').Usuario
+const modeloResultadosKnn = require('../models').ResultadosKnn
 
 module.exports = class controllerEquipos {
 
     static async getEquipos(req,res){
         modeloEquipo.findAll({
             include : [
-                {model:modeloFichaMantenimiento},
                 {model:modeloFuncionario},
                 {model:modeloEstadoEquipo},
                 {model:modeloCaracteristicaEquipo},
                 {model:modeloImagen},
-                {model:modeloTipoEquipo}
+                {model:modeloTipoEquipo},
+                {model:modeloResultadosKnn}
             ]
         })
         .then((data)=>{
@@ -37,12 +38,15 @@ module.exports = class controllerEquipos {
         modeloEquipo.findOne({
             where:{ id : req.params.id },
             include : [
-                {model:modeloFichaMantenimiento},
                 {model:modeloFuncionario},
                 {model:modeloEstadoEquipo},
-                {model:modeloCaracteristicaEquipo},
+                {model:modeloCaracteristicaEquipo, include:[{model:modeloTipoCaracteristicaEquipo}]},
                 {model:modeloImagen},
-                {model:modeloTipoEquipo}
+                {model:modeloTipoEquipo},
+                {model:modeloResultadosKnn}
+            ],
+            order:[
+                [{model:modeloResultadosKnn},'createdAt','DESC']
             ]
         })
         .then((data)=>{

@@ -29,10 +29,16 @@ module.exports = (sequelize, DataTypes) => {
       Equipo.hasMany(models.FichaMantenimiento,{
         foreignKey: 'idEquipo'
       }),
+      Equipo.hasMany(models.TurnoMantenimiento,{
+        foreignKey: 'idEquipo'
+      }),
       Equipo.hasMany(models.Metrica,{
         foreignKey: 'idEquipo'
       }),
       Equipo.hasMany(models.Imagen,{
+        foreignKey: 'idEquipo'
+      }),
+      Equipo.hasMany(models.ResultadosKnn,{
         foreignKey: 'idEquipo'
       })
 
@@ -45,6 +51,7 @@ module.exports = (sequelize, DataTypes) => {
     direccionMAC: DataTypes.STRING,
     observaciones: DataTypes.STRING,
     idEstadoEquipo: DataTypes.INTEGER,
+    idEstadoRendimiento: DataTypes.INTEGER,
     idTipoEquipo: DataTypes.INTEGER,
     idFuncionario: DataTypes.INTEGER
   }, {

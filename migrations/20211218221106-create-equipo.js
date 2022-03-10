@@ -23,6 +23,9 @@ module.exports = {
       observaciones: {
         type: Sequelize.STRING
       },
+      idEstadoRendimiento: {
+        type: Sequelize.INTEGER
+      },
       idEstadoEquipo: {
         type: Sequelize.INTEGER,
         references: {

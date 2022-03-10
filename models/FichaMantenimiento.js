@@ -11,21 +11,23 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      FichaMantenimiento.belongsTo(models.Funcionario,{
-        foreignKey: 'idFuncionario',
-        target_Key: 'id'
-      }),
       FichaMantenimiento.belongsTo(models.Equipo,{
         foreignKey: 'idEquipo',
         target_Key: 'id'
+      }),
+      FichaMantenimiento.belongsTo(models.TurnoMantenimiento,{
+        foreignKey: 'idTurnoMantenimiento',
+        target_Key: 'id'
       })
-
     }
   };
   FichaMantenimiento.init({
     numFormulario: DataTypes.STRING,
-    idFuncionario: DataTypes.INTEGER,
-    idEquipo: DataTypes.INTEGER
+    fechaFicha: DataTypes.DATE,
+    idTurnoMantenimiento: DataTypes.INTEGER,
+    idEquipo: DataTypes.INTEGER,
+    informe: DataTypes.STRING,
+    revision: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'FichaMantenimiento',

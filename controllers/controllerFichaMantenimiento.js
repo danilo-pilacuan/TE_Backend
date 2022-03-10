@@ -10,6 +10,7 @@ const modeloMetrica = require('../models').Metrica
 const modeloTipoCaracteristicaEquipo = require('../models').TipoCaracteristicaEquipo
 const modeloTipoEquipo = require('../models').TipoEquipo
 const modeloUsuario = require('../models').Usuario
+const modeloTurnosMantenimiento = require('../models').TurnoMantenimiento
 
 module.exports = class controllerFichaMantenimiento {
 
@@ -17,7 +18,7 @@ module.exports = class controllerFichaMantenimiento {
         modeloFichaMantenimiento.findAll({
             include : [
                 {model:modeloEquipo},
-                {model:modeloFuncionario},
+                {model:modeloTurnosMantenimiento},
             ]
         })
         .then((data)=>{
@@ -34,7 +35,7 @@ module.exports = class controllerFichaMantenimiento {
             where:{ id : req.params.id },
             include : [
                 {model:modeloEquipo},
-                {model:modeloFuncionario},
+                {model:modeloTurnosMantenimiento},
             ]
         })
         .then((data)=>{

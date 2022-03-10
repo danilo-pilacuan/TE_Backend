@@ -5,6 +5,8 @@ const controllerUsuarios = require('../controllers/controllerUsuarios')
 
 router.get("/",controllerUsuarios.getUsuarios);
 router.get("/logout",controllerUsuarios.logout);
+router.patch("/cambiarContrasenia/:id",controllerUsuarios.cambiarContrasenia);
+router.get("/recover/:id",controllerUsuarios.recoverUser);
 router.get("/:id",controllerUsuarios.getUsuarioById);
 router.post("/",controllerUsuarios.createUsuario);
 router.patch("/:id",controllerUsuarios.editUsuario);

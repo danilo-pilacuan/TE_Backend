@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser')
 
 const app = express();
 //const port = process.env.PORT || 3000;
+app.use(express.static("uploads/docs"))
 
 const modeloCaracteristicaEquipo = require('./models').CaracteristicaEquipo
 const modeloDependencia = require('./models').Dependencia
@@ -92,6 +93,10 @@ app.use('/api/metricas',require('./routes/routesMetricas'))
 app.use('/api/tipoequipo',require('./routes/routesTipoEquipo'))
 app.use('/api/tipocaracteristicaequipo',require('./routes/routesTipoCaracteristicaEquipo'))
 app.use('/api/usuarios',require('./routes/routesUsuarios'))
+app.use('/api/qrhandler',require('./routes/routesQR'))
+app.use('/api/resultadosknn',require('./routes/routesResultadosKnn'))
+app.use('/api/turnosmantenimiento',require('./routes/routesTurnosMantenimiento'))
+app.use('/api/accionesmantenimiento',require('./routes/routesAccionesMantenimiento'))
 
 
 app.listen(3000,()=>{

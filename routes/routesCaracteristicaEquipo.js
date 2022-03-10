@@ -3,6 +3,7 @@ const router = express.Router();
 const controllerCaracteristicaEquipo = require('../controllers/controllerCaracteristicaEquipo')
 
 router.get("/",controllerCaracteristicaEquipo.getCaracteristicasEquipo);
+router.get("/equipo/:id",controllerCaracteristicaEquipo.getCaracteristicasByEquipoId);
 router.get("/:id",controllerCaracteristicaEquipo.getCaracteristicaEquipoById);
 router.post("/",controllerCaracteristicaEquipo.createCaracteristicaEquipo);
 router.patch("/:id",controllerCaracteristicaEquipo.editCaracteristicaEquipo);

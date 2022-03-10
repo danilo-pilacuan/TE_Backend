@@ -17,9 +17,6 @@ module.exports = (sequelize, DataTypes) => {
       }),
       Funcionario.hasMany(models.Equipo,{
         foreignKey: 'idFuncionario'
-      }),
-      Funcionario.hasMany(models.FichaMantenimiento,{
-        foreignKey: 'idFuncionario'
       })
     }
   };

@@ -17,7 +17,6 @@ module.exports = class controllerFuncionarios {
         modeloFuncionario.findAll({
             include : [
                 {model:modeloEquipo},
-                {model:modeloFichaMantenimiento},
                 {model:modeloDependencia},
             ]
         })
@@ -35,7 +34,6 @@ module.exports = class controllerFuncionarios {
             where:{ id : req.params.id },
             include : [
                 {model:modeloEquipo},
-                {model:modeloFichaMantenimiento},
                 {model:modeloDependencia},
             ]
         })
