@@ -22,9 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   CaracteristicaEquipo.init({
-    nombre: DataTypes.STRING,
     descripcion: DataTypes.STRING,
-    valor: DataTypes.STRING,
     idEquipo: DataTypes.INTEGER,
     idTipoCaracteristicaEquipo: DataTypes.INTEGER
   }, {

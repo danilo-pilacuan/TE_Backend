@@ -21,11 +21,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Funcionario.init({
-    cedula: DataTypes.STRING,
     nombres: DataTypes.STRING,
     apellidos: DataTypes.STRING,
-    telefono: DataTypes.STRING,
-    direccion: DataTypes.STRING,
+    cargo: DataTypes.STRING,
     idDependencia: DataTypes.INTEGER
   }, {
     sequelize,

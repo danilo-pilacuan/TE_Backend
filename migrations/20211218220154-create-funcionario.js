@@ -8,19 +8,13 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      cedula: {
-        type: Sequelize.STRING
-      },
       nombres: {
         type: Sequelize.STRING
       },
       apellidos: {
         type: Sequelize.STRING
       },
-      telefono: {
-        type: Sequelize.STRING
-      },
-      direccion: {
+      cargo: {
         type: Sequelize.STRING
       },
       idDependencia: {

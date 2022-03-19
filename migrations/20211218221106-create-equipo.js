@@ -23,6 +23,15 @@ module.exports = {
       observaciones: {
         type: Sequelize.STRING
       },
+      estadoGeneral: {
+        type: Sequelize.STRING
+      },
+      garantia: {
+        type: Sequelize.STRING
+      },
+      resultadoGeneral: {
+        type: Sequelize.STRING
+      },
       idEstadoRendimiento: {
         type: Sequelize.INTEGER
       },

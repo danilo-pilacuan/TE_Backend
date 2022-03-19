@@ -8,13 +8,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      nombre: {
-        type: Sequelize.STRING
-      },
       descripcion: {
-        type: Sequelize.STRING
-      },
-      valor: {
         type: Sequelize.STRING
       },
       idEquipo: {

@@ -17,9 +17,9 @@ module.exports = class controllerEquipos {
     static async getEquipos(req,res){
         modeloEquipo.findAll({
             include : [
-                {model:modeloFuncionario},
+                {model:modeloFuncionario, include:[{model:modeloDependencia}]},
                 {model:modeloEstadoEquipo},
-                {model:modeloCaracteristicaEquipo},
+                {model:modeloCaracteristicaEquipo, include:[{model:modeloTipoCaracteristicaEquipo}]},
                 {model:modeloImagen},
                 {model:modeloTipoEquipo},
                 {model:modeloResultadosKnn}
@@ -38,7 +38,7 @@ module.exports = class controllerEquipos {
         modeloEquipo.findOne({
             where:{ id : req.params.id },
             include : [
-                {model:modeloFuncionario},
+                {model:modeloFuncionario, include:[{model:modeloDependencia}]},
                 {model:modeloEstadoEquipo},
                 {model:modeloCaracteristicaEquipo, include:[{model:modeloTipoCaracteristicaEquipo}]},
                 {model:modeloImagen},
