@@ -20,7 +20,7 @@ module.exports = class controllerTurnosMantenimiento {
     static async getTurnosMantenimiento(req,res){
         modeloTurnosMantenimiento.findAll({
             include : [
-                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn}]},
+                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn},{model:modeloTipoEquipo}]},
                 {model:modeloFichaMantenimiento},
             ]
         })
@@ -35,7 +35,7 @@ module.exports = class controllerTurnosMantenimiento {
     static async getTurnosMantenimientoNoAtendidos(req,res){
         modeloTurnosMantenimiento.findAll({
             include : [
-                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn}]},
+                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn},{model:modeloTipoEquipo}]},
                 {model:modeloFichaMantenimiento},
             ],
             where:{atendido:0}
@@ -52,7 +52,7 @@ module.exports = class controllerTurnosMantenimiento {
     static async getTurnosMantenimientoAtendidos(req,res){
         modeloTurnosMantenimiento.findAll({
             include : [
-                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn}]},
+                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn},{model:modeloTipoEquipo}]},
                 {model:modeloFichaMantenimiento},
             ],
             where:{atendido:1}
@@ -68,7 +68,7 @@ module.exports = class controllerTurnosMantenimiento {
     static async getTurnosMantenimientoAtendidos(req,res){
         modeloTurnosMantenimiento.findAll({
             include : [
-                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn}]},
+                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn},{model:modeloTipoEquipo}]},
                 {model:modeloFichaMantenimiento},
             ],
             where:{atendido:1}
@@ -84,7 +84,7 @@ module.exports = class controllerTurnosMantenimiento {
     static async getTurnosMantenimientoAtendidosByEquipoId(req,res){
         modeloTurnosMantenimiento.findAll({
             include : [
-                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn}]},
+                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn},{model:modeloTipoEquipo}]},
                 {model:modeloFichaMantenimiento},
             ],
             where:{
@@ -102,7 +102,7 @@ module.exports = class controllerTurnosMantenimiento {
     static async getTurnosMantenimientoNoAtendidosByEquipoId(req,res){
         modeloTurnosMantenimiento.findAll({
             include : [
-                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn}]},
+                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn},{model:modeloTipoEquipo}]},
                 {model:modeloFichaMantenimiento},
             ],
             where:{
@@ -122,7 +122,7 @@ module.exports = class controllerTurnosMantenimiento {
         modeloTurnosMantenimiento.findOne({
             where:{ id : req.params.id },
             include : [
-                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn}]},
+                {model:modeloEquipo, include:[{model:modeloFuncionario,include:[{model:modeloDependencia}]},{model:modeloResultadosKnn},{model:modeloTipoEquipo}]},
                 {model:modeloFichaMantenimiento},
             ]
         })

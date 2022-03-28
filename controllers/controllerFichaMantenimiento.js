@@ -17,7 +17,7 @@ module.exports = class controllerFichaMantenimiento {
     static async getFichasMantenimiento(req,res){
         modeloFichaMantenimiento.findAll({
             include : [
-                {model:modeloEquipo},
+                {model:modeloEquipo,include:[{model:modeloTipoEquipo}]},
                 {model:modeloTurnosMantenimiento},
             ]
         })
@@ -34,7 +34,7 @@ module.exports = class controllerFichaMantenimiento {
         modeloFichaMantenimiento.findOne({
             where:{ id : req.params.id },
             include : [
-                {model:modeloEquipo},
+                {model:modeloEquipo,include:[{model:modeloTipoEquipo}]},
                 {model:modeloTurnosMantenimiento},
             ]
         })
